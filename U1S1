@@ -1,0 +1,78 @@
+**Semana 1** de la asignatura **Diseño de Circuitos**, perteneciente a la **Unidad 1: Análisis de lógica combinacional con diseño clásico**, se cubrieron los siguientes temas:
+
+---
+
+### 1. Representación Binaria y Niveles de Voltaje
+* **Fundamento físico:** Se explicó que las computadoras operan únicamente con `0` y `1` porque utilizan transistores como **interruptores controlados por voltaje** (interruptor abierto = no pasa corriente/voltaje bajo = `0`; interruptor cerrado = pasa corriente/voltaje alto = `1`).
+* **Rangos de voltaje y márgenes de ruido (Familia 74LS):** El `1` y el `0` lógico no corresponden a voltajes exactos sino a rangos:
+  * **Para un 1 lógico:** La salida promete \\(\ge 2{,}7\text{ V}\\) y la entrada exige \\(\ge 2{,}0\text{ V}\\), ofreciendo un **margen de ruido alto de \\(0{,}7\text{ V}\\)**.
+  * **Para un 0 lógico:** La salida promete \\(\le 0{,}5\text{ V}\\) y la entrada exige \\(\le 0{,}8\text{ V}\\), ofreciendo un **margen de ruido bajo de \\(0{,}3\text{ V}\\)**.
+  * **Zona indefinida:** Entre \\(0{,}8\text{ V}\\) y \\(2{,}0\text{ V}\\) el circuito integrado no garantiza la lectura.
+  * **Ejemplo de falla del documento:** Si sale un `0` de \\(0{,}5\text{ V}\\) y un motor cercano induce \\(0{,}4\text{ V}\\) de ruido, la señal sube a \\(0{,}9\text{ V}\\), cayendo en la zona indefinida y generando un error.
+
+---
+
+### 2. Sistemas Numéricos Posicionales y Conversiones
+* **Concepto posicional:** En todo sistema posicional la posición de cada dígito determina su valor según potencias de la base (a diferencia de los números romanos). En binario, los pesos posicionales de los bits son \\(128, 64, 32, 16, 8, 4, 2, 1\\).
+  * **Ejemplo:** \\(1011_2 = 8 + 0 + 2 + 1 = 11_{10}\\).
+* **Conversión Decimal a Binario:** Se realiza dividiendo sucesivamente entre 2 y tomando los restos de abajo hacia arriba.
+  * **Ejemplo del documento:** Para convertir el número \\(25\\):
+    * \\(25 \div 2 = 12\\) (resto **1**)
+    * \\(12 \div 2 = 6\\) (resto **0**)
+    * \\(6 \div 2 = 3\\) (resto **0**)
+    * \\(3 \div 2 = 1\\) (resto **1**)
+    * \\(1 \div 2 = 0\\) (resto **1**)
+    * Resultado: \\(25_{10} = 11001_2\\).
+* **Bases Hexadecimal y Octal:** Sirven como representaciones abreviadas del binario.
+  * **Hexadecimal:** Agrupa los bits de 4 en 4 desde la derecha (utilizando letras de la **A a la F** para valores de 10 a 15).
+  * **Octal:** Agrupa los bits de 3 en 3 desde la derecha.
+  * **Ejemplo del documento:** El valor \\(157_{10} = 10011101_2\\) se convierte en **\\(9\text{D}_{16}\\)** en hexadecimal (\\(1001 \to 9\\), \\(1101 \to \text{D}\\)) y en **\\(235_8\\)** en octal (\\(010 \to 2\\), \\(011 \to 3\\), \\(101 \to 5\\)).
+
+---
+
+### 3. Aritmética Binaria y Números con Signo (Complemento a Dos)
+* **Suma Binaria:** Sigue las reglas básicas con acarreo (\\(0+0=0\\), \\(0+1=1\\), \\(1+1=10\\), \\(1+1+1=11\\)).
+  * **Ejemplo:** \\(1011_2\\) (\\(11\\)) \\(+\\) \\(0110_2\\) (\\(6\\)) \\(= 10001_2\\) (\\(17\\)).
+* **Complemento a Dos:** Convención utilizada para representar números negativos en circuitos. En **4 bits**, el rango abarca de **\\(-8\\) a \\(+7\\)**, reservando el bit de la izquierda para el signo (`0` positivo, `1` negativo).
+  * **Algoritmo:** Invertir los bits y sumar 1.
+  * **Ejemplo:** El número \\(+3\\) en binario de 4 bits es \\(0011_2\\). Al invertir los bits queda \\(1100\\), y al sumar 1 resulta \\(1101_2\\), que representa el \\(-3\\).
+  * **Ventaja operativa:** Permite realizar restas mediante sumadores (\\(5 - 3 = 5 + (-3)\\)): \\(0101_2 + 1101_2 = 10010_2\\), donde el bit sobrante a la izquierda se descarta para dar \\(0010_2 = 2\\).
+* **Desbordamiento (Overflow):** Ocurre cuando el resultado no cabe en el número de bits disponibles.
+  * **Ejemplo:** En 4 bits, sumar \\(7 + 1\\) (\\(0111_2 + 0001_2\\)) genera \\(1000_2\\), lo que en complemento a dos se interpreta erróneamente como \\(-8\\).
+
+---
+
+### 4. Códigos de Representación Digital
+* **Código BCD (Binary Coded Decimal):** Codifica cada dígito decimal de forma independiente usando 4 bits. Se aplica en displays de relojes y calculadoras.
+  * **Ejemplo del documento:** El número \\(157\\) se expresa en BCD como \\(0001\ 0101\ 0111\\) (diferente de su versión en binario natural \\(10011101_2\\)). Las combinaciones de \\(1010\\) a \\(1111\\) no se emplean en BCD.
+* **Código Gray:** Diseñado para que entre valores numéricos vecinos únicamente **cambie un bit a la vez**. Se usa en perillas, encoders rotativos y en la disposición de los mapas de Karnaugh para prevenir errores en transiciones.
+* **Código ASCII:** Estándar que asigna valores de 7 bits (128 caracteres) a letras, números y símbolos.
+  * **Ejemplo del documento:** La letra **«A»** equivale al número decimal **65** (\\(0x41\\) en hexadecimal o \\(01000001_2\\) en binario).
+
+---
+
+### 5. Compuertas Lógicas y Circuitos Integrados
+* **Las 7 Compuertas Lógicas Básicas:**
+  1. **NOT:** Inversor (\\(Y = A'\\)).
+  2. **AND:** Salida 1 solo si todas las entradas valen 1 (\\(Y = A \cdot B\\)).
+  3. **OR:** Salida 1 si al menos una entrada vale 1 (\\(Y = A + B\\)).
+  4. **NAND:** NOT-AND; salida 0 solo si todas las entradas valen 1.
+  5. **NOR:** NOT-OR; salida 1 solo si ninguna entrada vale 1.
+  6. **XOR:** Salida 1 si las entradas son distintas. **Ejemplo cotidiano:** La luz de una escalera controlada por dos interruptores alternados.
+  7. **XNOR:** Salida 1 si las entradas son iguales.
+* **Estándares de Simbología:** Comparativa entre la norma **ANSI / IEEE** (formas distintivas, usada en la asignatura) y la norma **IEC** (rectángulos con símbolos).
+* **Circuitos Integrados (Chip 74LS08):**
+  * Encapsulado **DIP-14** que contiene 4 compuertas AND de 2 entradas. El pin 14 se conecta a \\(+5\text{ V}\\) (VCC) y el pin 7 a tierra (GND).
+  * **Lectura del código (SN74LS08N):** `SN` = Texas Instruments; `74` = Rango comercial; `LS` = Tecnología TTL Low-power Schottky; `08` = 4 compuertas AND de 2 entradas; `N` = Encapsulado DIP de plástico.
+
+---
+
+### 6. Actividades Prácticas y Tareas Pendientes
+* **Ejercicios desarrollados:** Reto de conversión en parejas y taller dirigido para traducir situaciones reales a compuertas lógicas (ej. alarmas, luces de pasillo, bombas de agua) y construir tablas de verdad (para expresiones como \\(Y = A \cdot B + C'\\)).
+* **Indicaciones para la siguiente sesión:**
+  * Realizar las lecturas del texto base y resolver el **Cuestionario 01** en el aula virtual.
+  * Instalar el simulador **Logisim-evolution** para la práctica APE 01.
+
+---
+
+💡 ¿Te gustaría que elabore una guía de estudio con preguntas tipo test o flashcards sobre estas conversiones y compuertas lógicas para practicar?
