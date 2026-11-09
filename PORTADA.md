@@ -32,7 +32,7 @@
 
 | Unidad | Descripción | Estado | Acceso |
 | :---: | :--- | :---: | :---: |
-| **Unidad 1** | Fundamentos de Circuitos, Lógica y Componentes | 🟢 Disponible | [![Ver Apuntes](https://img.shields.io/badge/UNIDAD_1-Circuitos-007ACC?style=for-the-badge&logo=codeforces&logoColor=white)](./UNIDAD1.md) |
+| **Unidad 1** | Fundamentos de Circuitos y Componentes | 🟢 Disponible | [🔌 Ver Apuntes](./UNIDAD1.md) |
 | **Unidad 2** | Diseño y Simulación de Circuitos Lógicos | 🔴 En curso | `No disponible` |
 | **Unidad 3** | Implementación y Modulaciones Avanzadas | ⚪ Próximamente | `No disponible` |
 
