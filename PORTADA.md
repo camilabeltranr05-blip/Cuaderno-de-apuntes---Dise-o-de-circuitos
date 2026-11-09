@@ -32,8 +32,8 @@
 
 | Unidad | Descripción | Estado | Acceso |
 | :---: | :--- | :---: | :---: |
-| **Unidad 1** | Fundamentos de Circuitos y Componentes | 🟢 Disponible | [🔌 Ver Apuntes](./UNIDAD1.md) |
-| **Unidad 2** | Diseño y Simulación de Circuitos Lógicos | 🔴 En curso | `No disponible` |
-| **Unidad 3** | Implementación y Modulaciones Avanzadas | ⚪ Próximamente | `No disponible` |
+| **Unidad 1** | Análisis de lógica combinacional con diseño clásico | 🟢 Disponible | [🔌 Ver Apuntes](./UNIDAD1.md) |
+| **Unidad 2** | -- | 🔴 En curso | `No disponible` |
+| **Unidad 3** | -- | ⚪ Próximamente | `No disponible` |
 
 </div>
