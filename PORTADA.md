@@ -26,9 +26,9 @@
 
 ---
 
-### CONTENIDO DEL CURSO
-
 <div align="center">
+
+### CONTENIDO DEL CURSO
 
 | Unidad | Descripción | Estado | Acceso |
 | :---: | :--- | :---: | :---: |
