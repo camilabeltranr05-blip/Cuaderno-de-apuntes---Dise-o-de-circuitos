@@ -1,7 +1,6 @@
 # 📂 Unidad 1: Análisis de lógica combinacional con diseño clásico
 <div align ="center">
 
-[![Volver a la Portada](https://img.shields.io/badge/⬅️_Volver_a_la_Portada-1E1E1E?style=for-the-badge&logo=github&logoColor=white)](./PORTADA.md)
 
 ---
 
@@ -13,6 +12,10 @@
 | **Semana 2** | *Álgebra de Boole y Simplificación de Circuitos*<br>• Postulados y teoremas fundamentales<br>• Minimización algebraica de expresiones lógicas<br>• Formas canónicas (SOP y POS) | ⚪ Próximamente | `No disponible` |
 | **Semana 3** | *Mapas de Karnaugh y Diseño Avanzado*<br>• Minimización mediante mapas de Karnaugh (2, 3 y 4 variables)<br>• Condición de "no importa" (Don't care)<br>• Implementación exclusiva con compuertas NAND/NOR | ⚪ Próximamente | `No disponible` |
 | **Semana 4** | *Circuitos Combinacionales Especiales y Detección de Errores*<br>• Sumadores y restadores aritméticos<br>• Decodificadores, codificadores y multiplexores<br>• Detección de desbordamiento (Overflow) en hardware | ⚪ Próximamente | `No disponible` |
+
+---
+
+[![Volver a la Portada](https://img.shields.io/badge/⬅️_Volver_a_la_Portada-1E1E1E?style=for-the-badge&logo=github&logoColor=white)](./PORTADA.md)
 
 ---
 
