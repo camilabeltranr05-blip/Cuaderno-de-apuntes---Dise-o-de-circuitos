@@ -26,7 +26,9 @@
 
 ---
 
-### 📑 Contenido del Curso
+### CONTENIDO DEL CURSO
+
+<div align="center">
 
 | Unidad | Descripción | Estado | Acceso |
 | :---: | :--- | :---: | :---: |
@@ -34,3 +36,4 @@
 | **Unidad 2** | Diseño y Simulación de Circuitos Lógicos | 🔴 En curso | `No disponible` |
 | **Unidad 3** | Implementación y Modulaciones Avanzadas | ⚪ Próximamente | `No disponible` |
 
+</div>
