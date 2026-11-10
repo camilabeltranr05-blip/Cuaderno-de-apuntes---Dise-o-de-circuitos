@@ -10,9 +10,8 @@
 | :---: | :--- | :---: | :---: |
 | **Semana 1** | **Sistemas numéricos, códigos y compuertas lógicas**<br>• Representación binaria y niveles de voltaje (Familia 74LS)<br>• Sistemas numéricos posicionales y conversiones<br>• Aritmética binaria y complemento a dos<br>• Códigos digitales (BCD, Gray, ASCII)<br>• Compuertas lógicas básicas y circuitos integrados (74LS08) | 🟢 Disponible | [![Ver Apuntes](https://img.shields.io/badge/SEMANA_1-Ver_Apuntes-007ACC?style=for-the-badge&logo=codeforces&logoColor=white)](./U1S1.md)
 | **Semana 2** | *Álgebra de Boole y Simplificación de Circuitos*<br>• Postulados y teoremas fundamentales<br>• Minimización algebraica de expresiones lógicas<br>• Formas canónicas (SOP y POS) | 🟢 Disponible | [![Ver Apuntes](https://img.shields.io/badge/SEMANA_2-Ver_Apuntes-007ACC?style=for-the-badge&logo=codeforces&logoColor=white)](./U1S2.md)
-| **Semana 3** | *Mapas de Karnaugh y Diseño Avanzado*<br>• Minimización mediante mapas de Karnaugh (2, 3 y 4 variables)<br>• Condición de "no importa" (Don't care)<br>• Implementación exclusiva con compuertas NAND/NOR | ⚪ Próximamente | `No disponible` |
-| **Semana 4** | *Circuitos Combinacionales Especiales y Detección de Errores*<br>• Sumadores y restadores aritméticos<br>• Decodificadores, codificadores y multiplexores<br>• Detección de desbordamiento (Overflow) en hardware | ⚪ Próximamente | `No disponible` |
-
+| **Semana 3** | *Mapas de Karnaugh y Diseño Avanzado*<br>• Minimización mediante mapas de Karnaugh (2, 3 y 4 variables)<br>• Condición de "no importa" (Don't care)<br>• Implementación exclusiva con compuertas NAND/NOR | 🟢 Disponible | [![Ver Apuntes](https://img.shields.io/badge/SEMANA_3-Ver_Apuntes-007ACC?style=for-the-badge&logo=codeforces&logoColor=white)](./U1S3.md)
+| **Semana 4** | *Circuitos Combinacionales Especiales y Detección de Errores*<br>• Sumadores y restadores aritméticos<br>• Decodificadores, codificadores y multiplexores<br>• Detección de desbordamiento (Overflow) en hardware | 🟢 Disponible | [![Ver Apuntes](https://img.shields.io/badge/SEMANA_4-Ver_Apuntes-007ACC?style=for-the-badge&logo=codeforces&logoColor=white)](./U1S4.md)
 ---
 
 [![Volver a la Portada](https://img.shields.io/badge/⬅️_Volver_a_la_Portada-1E1E1E?style=for-the-badge&logo=github&logoColor=white)](./PORTADA.md)
