@@ -36,4 +36,9 @@
 | **Unidad 2** | -- | 🔴 En curso | `No disponible` |
 | **Unidad 3** | -- | ⚪ Próximamente | `No disponible` |
 
+
+## Declaración de Uso de Inteligencia Artificial
+
+Este proyecto utilizó modelos de lenguaje basados en Inteligencia Artificial (IA) como asistente técnico para la estructuración de la documentación en Markdown, la optimización de sintaxis y la corrección de estilo del código y textos redactados. Todo el contenido generado por la IA fue posteriormente revisado, auditado y validado por los autores del proyecto para garantizar su precisión, integridad y cumplimiento de las especificaciones requeridas.
+
 </div>
