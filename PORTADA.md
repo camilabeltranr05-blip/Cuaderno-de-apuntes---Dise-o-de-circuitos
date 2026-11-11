@@ -39,6 +39,6 @@
 
 ## Declaración de Uso de Inteligencia Artificial
 
-Este proyecto utilizó modelos de lenguaje basados en Inteligencia Artificial (IA) como asistente técnico para la estructuración de la documentación en Markdown, la optimización de sintaxis y la corrección de estilo del código y textos redactados. Todo el contenido generado por la IA fue posteriormente revisado, auditado y validado por los autores del proyecto para garantizar su precisión, integridad y cumplimiento de las especificaciones requeridas.
+Este proyecto utilizó modelos de lenguaje basados en Inteligencia Artificial (IA) como asistente para elaborar la estructura de la documentación en Markdown, la optimización de sintaxis y la corrección de estilo del código y textos redactados. Todo el contenido generado por la IA fue posteriormente revisado y validado por los autores del proyecto para garantizar su precisión, integridad y cumplimiento de las especificaciones requeridas.
 
 </div>
